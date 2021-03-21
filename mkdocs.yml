@@ -1,0 +1,60 @@
+site_name: Mkdocs Simple Blog Theme
+site_description: >-
+  Simple blog theme based on Mkdocs Material
+
+docs_dir: posts
+repo_url: https://github.com/tuanpht/mkdocs-simple-blog-theme
+
+theme:
+  name: material
+  custom_dir: mkdocs_overrides
+  palette:
+    primary: indigo
+    accent: green
+  font:
+    text: IBM Plex Sans
+    code: Roboto Mono
+  features:
+    - header.autohide
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+markdown_extensions:
+  - abbr
+  - pymdownx.snippets
+  - pymdownx.tasklist
+  - def_list
+  - meta
+  - admonition
+  - pymdownx.tabbed
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      pygments_style: lovelace
+      noclasses: true
+      extend_pygments_lang:
+        - name: php
+          lang: php
+          options:
+            startinline: true
+  - pymdownx.keys
+  - footnotes
+  - attr_list
+  - toc:
+      permalink: '#'
+      slugify: !!python/name:pymdownx.slugs.uslugify
+
+# Google Analytics
+google_analytics:
+  - UA-xxx
+  - auto
+
+# Page tree
+nav:
+  - Top: index.md
+  - Archive: archive.md
+  - Page with TOC: page-with-toc.md
+  - Page full width: page-full-width.md
+  - About: about.md
