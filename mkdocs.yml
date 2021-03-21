@@ -4,6 +4,7 @@ site_description: >-
 
 docs_dir: posts
 repo_url: https://github.com/tuanpht/mkdocs-simple-blog-theme
+edit_uri: ''
 
 theme:
   name: material
