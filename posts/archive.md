@@ -1,3 +1,7 @@
+---
+disable_comment: true
+---
+
 # Archive
 
 List all your posts here, maybe.

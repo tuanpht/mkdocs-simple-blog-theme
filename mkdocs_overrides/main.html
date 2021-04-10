@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 
-{% block styles %}
-{{ super() }}
-<link rel="stylesheet" href="{{ base_url }}/css/custom.css" />
+{% block disqus %}
+  {% if not page.meta.disable_comment %}
+    <hr />
+    <script
+      src="https://utteranc.es/client.js"
+      repo="tuanpht/mkdocs-simple-blog-theme"
+      issue-term="pathname"
+      theme="github-light"
+      crossorigin="anonymous"
+      async
+    ></script>
+  {% endif %}
 {% endblock %}
