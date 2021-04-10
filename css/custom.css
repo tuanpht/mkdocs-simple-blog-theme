@@ -1,1 +1,15 @@
 /* Your custom css here */
+body {
+  background-color: #f0f2f5;
+}
+
+.md-content {
+  background-color: #fff;
+  box-shadow: 0 2px 12px 0px rgba(122, 122, 122, 0.5);
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.md-typeset {
+  font-size: 0.82rem;
+}
