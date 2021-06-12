@@ -11,10 +11,22 @@ theme:
   name: material
   custom_dir: mkdocs_overrides
   palette:
-    primary: indigo
-    accent: green
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: green
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: it-4-life
+      primary: indigo
+      accent: green
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   font:
-    text: IBM Plex Sans
+    text: Nunito
     code: Roboto Mono
   features:
     - header.autohide
