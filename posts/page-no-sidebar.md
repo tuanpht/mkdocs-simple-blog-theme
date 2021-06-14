@@ -1,5 +1,7 @@
 ---
-full_width: true
+hide:
+  - toc
+  - navigation
 ---
 
 --8<-- "includes/abbreviations.md"

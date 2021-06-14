@@ -47,7 +47,15 @@
   color: #fff;
 }
 
+.hide-nav {
+  visibility: hidden;
+}
+
 @media screen and (max-width:  76.187em) {
+  .hide-nav {
+    visibility: visible;
+  }
+
   .md-content {
     border-radius: 0;
   }

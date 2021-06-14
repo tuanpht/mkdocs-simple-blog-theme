@@ -1,5 +1,7 @@
 ---
 disable_comment: true
+hide:
+  - navigation
 ---
 
 # Archive

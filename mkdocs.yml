@@ -3,7 +3,7 @@ site_description: >-
   Simple blog theme based on Mkdocs Material
 
 docs_dir: posts
-repo_url: https://github.com/tuanpht/mkdocs-simple-blog-theme
+repo_url: https://github.com/tuanpht/
 site_url: https://tuanpht.github.io/mkdocs-simple-blog-theme/
 edit_uri: ''
 
@@ -74,5 +74,6 @@ nav:
   - Top: index.md
   - Archive: archive.md
   - Page with TOC: page-with-toc.md
+  - Page no sidebar: page-no-sidebar.md
   - Page full width: page-full-width.md
   - About: about.md

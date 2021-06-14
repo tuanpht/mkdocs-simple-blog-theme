@@ -1,5 +1,8 @@
 ---
 disable_comment: true
+hide:
+  - toc
+  - navigation
 ---
 
 # Welcome to My Blog

@@ -13,3 +13,39 @@
     ></script>
   {% endif %}
 {% endblock %}
+
+{% block site_nav %}
+  {% if nav %}
+    {% if page and page.meta and page.meta.hide %}
+      {% set hiddenClass = "hide-nav" if "navigation" in page.meta.hide %}
+      {% set hiddenAttr = "" %}
+    {% endif %}
+    {% if page and page.meta and page.meta.full_width %}
+      {% set hiddenClass = "" %}
+      {% set hiddenAttr = "hidden" %}
+    {% endif %}
+    <div class="md-sidebar md-sidebar--primary {{ hiddenClass }}" data-md-component="sidebar" data-md-type="navigation" {{ hiddenAttr }}>
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+          {% include "partials/nav.html" %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  {% if page.toc and not "toc.integrate" in features %}
+    {% if page and page.meta and page.meta.hide %}
+      {% set hiddenClass = "hide-nav" if "toc" in page.meta.hide %}
+    {% endif %}
+    {% if page and page.meta and page.meta.full_width %}
+      {% set hiddenClass = "" %}
+      {% set hiddenAttr = "hidden" %}
+    {% endif %}
+    <div class="md-sidebar md-sidebar--secondary {{ hiddenClass }}" data-md-component="sidebar" data-md-type="toc" {{ hiddenAttr }}>
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+          {% include "partials/toc.html" %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}
