@@ -6,6 +6,8 @@
 .md-content {
   background-color: #fff;
   box-shadow: 0 10px 40px 0 rgba(47, 47, 47, .1);
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 20px;
   border-radius: 3px;
 }
@@ -59,6 +61,15 @@
   [data-md-color-scheme="it-4-life"] .md-nav--primary .md-nav__title ~ .md-nav__list {
     color: #fff;
   }
+}
+
+.md-typeset code {
+  font-size: .75em;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: inherit;
 }
 
 .md-header[data-md-state="hidden"] {
