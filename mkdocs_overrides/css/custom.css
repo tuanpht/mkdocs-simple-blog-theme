@@ -17,6 +17,12 @@
   font-weight: 300;
 }
 
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: #000;
+}
+
 [data-md-color-scheme="it-4-life"] .md-main,
 [data-md-color-scheme="it-4-life"] .md-header,
 [data-md-color-scheme="it-4-life"] .md-tabs {
