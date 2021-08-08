@@ -26,7 +26,7 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
   font:
-    text: Nunito
+    text: Nunito Sans
     code: Roboto Mono
   features:
     - header.autohide
@@ -71,7 +71,7 @@ google_analytics:
 
 # Page tree
 nav:
-  - Top: index.md
+  - Home: index.md
   - Archive: archive.md
   - Page with TOC: page-with-toc.md
   - Page no sidebar: page-no-sidebar.md
